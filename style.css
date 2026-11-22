@@ -1,0 +1,18 @@
+/* Saylex site: Paper by default, Graphite when the device is in dark mode */
+@font-face{font-family:"Bricolage Grotesque";src:url(fonts/bricolage-grotesque-latin.woff2) format("woff2");font-weight:200 800;font-display:swap}
+:root{--ground:#F6F7F8;--ink:#101114;--ink2:#6B6E75;--line:#E3E5E8;--mark:#101114}
+@media (prefers-color-scheme:dark){:root{--ground:#0E0F11;--ink:#F2F2F0;--ink2:#8A8C91;--line:#2A2C30;--mark:#FF5A1F}}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--ground);color:var(--ink);font:17px/1.6 "Bricolage Grotesque",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+main{max-width:680px;margin:0 auto;padding:48px 24px 96px}
+.mark{display:inline-block;font-weight:800;font-size:22px;letter-spacing:-.04em;color:var(--ink);text-decoration:none}
+.mark i{font-style:normal;color:#FF5A1F}
+h1{font-weight:800;font-size:44px;line-height:1.05;letter-spacing:-.035em;margin-top:40px}
+h1.hero{font-size:40px;max-width:16ch}
+h2{font-weight:800;font-size:22px;letter-spacing:-.02em;margin-top:36px}
+p,ul{margin-top:12px;color:var(--ink)}
+ul{padding-left:20px}
+li{margin-top:6px}
+.meta{color:var(--ink2);font-size:15px;margin-top:8px}
+a{color:var(--ink);text-decoration-color:var(--mark);text-decoration-thickness:2px;text-underline-offset:3px}
+.links{margin-top:28px;color:var(--ink2)}
